@@ -33,14 +33,6 @@ while true; do
 done
 
 
-# Check if sudo
-if [[ "$EUID" != 0 ]]; then
-    echo "Script must be performed with root privileges."
-    echo "Try again."
-    exit 2
-fi
-
-
 # Download Go
 cd ~/
 echo "Downloading Go version ${GO_VERSION} from ${GO_TAR_URL}"
@@ -54,7 +46,7 @@ rm -f go1.${GO_VERSION}.linux-amd64.tar.gz
 
 # Add Go to PATH
 echo "Adding Go to path"
-echo 'export PATH=/usr/local/go/bin:$PATH' >>~/.bash_profile
+sudo echo 'export PATH=/usr/local/go/bin:$PATH' >>~/.bash_profile
 
 
 # Install NodeJS
