@@ -40,8 +40,8 @@ wget "${GO_TAR_URL}/go1.${GO_VERSION}.linux-amd64.tar.gz"
 
 # Install Go
 echo "Unpacking go1.${GO_VERSION}.linux-amd64.tar.gz"
-rm -rf /usr/local/go && tar -xzf go1.14.13.linux-amd64.tar.gz -C /usr/local
-rm -f go1.${GO_VERSION}.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -xzf go1.14.13.linux-amd64.tar.gz -C /usr/local
+sudo rm -f go1.${GO_VERSION}.linux-amd64.tar.gz
 
 
 # Add Go to PATH
