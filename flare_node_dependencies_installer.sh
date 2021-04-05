@@ -11,7 +11,7 @@ NODEJS_URL="https://deb.nodesource.com/setup_10.x"
 echo "============="
 echo "   WARNING   "
 echo "============="
-printf "This will load all software dependencies for running your own FLare node on the compton 2 testnet.\nIt was developped April 2021 and may no longer be up to date.\nThis script was only tested on a headless 64-bit Ubuntu Server 20.14 and assumes that the system has not been modified from the default installation in anyway. If you have already tried to partially set up a Flare node on your machine, wipe it and give it a brand new installation prior to using this script. Proceed with caution."
+printf "This will load all software dependencies for running your own FLare node on the compton 2 testnet.\nIt was developped April 2021 and may no longer be up to date.\nThis script was only tested on a headless 64-bit Ubuntu Server 20.10 and assumes that the system has not been modified from the default installation in anyway. If you have already tried to partially set up a Flare node on your machine, wipe it and give it a brand new installation prior to using this script. Proceed with caution."
 
 
 # y/n prompt to run
